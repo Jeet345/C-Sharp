@@ -1,0 +1,12 @@
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\bin\Debug\StoreDB.mdf
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\bin\Debug\StoreDB_log.ldf
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\bin\Debug\LinqCRUD.exe.config
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\bin\Debug\LinqCRUD.exe
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\bin\Debug\LinqCRUD.pdb
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.csproj.AssemblyReference.cache
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.Form1.resources
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.Properties.Resources.resources
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.csproj.GenerateResource.cache
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.csproj.CoreCompileInputs.cache
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.exe
+C:\Users\ramva\source\repos\LinqCRUD\LinqCRUD\obj\Debug\LinqCRUD.pdb
