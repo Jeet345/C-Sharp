@@ -53,7 +53,9 @@ namespace LinqJobPortal
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView1.Location = new System.Drawing.Point(582, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -137,6 +139,7 @@ namespace LinqJobPortal
             // addBtn
             // 
             this.addBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.addBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBtn.Location = new System.Drawing.Point(102, 305);
             this.addBtn.Name = "addBtn";
@@ -149,6 +152,7 @@ namespace LinqJobPortal
             // deleteBtn
             // 
             this.deleteBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBtn.Location = new System.Drawing.Point(358, 305);
             this.deleteBtn.Name = "deleteBtn";
@@ -161,6 +165,7 @@ namespace LinqJobPortal
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(230, 305);
             this.button2.Name = "button2";
@@ -187,6 +192,7 @@ namespace LinqJobPortal
             // searchBtn
             // 
             this.searchBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.searchBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBtn.Location = new System.Drawing.Point(582, 368);
             this.searchBtn.Name = "searchBtn";
@@ -217,6 +223,7 @@ namespace LinqJobPortal
             // showAllBtn
             // 
             this.showAllBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.showAllBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showAllBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showAllBtn.Location = new System.Drawing.Point(992, 368);
             this.showAllBtn.Name = "showAllBtn";

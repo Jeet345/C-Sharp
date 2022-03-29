@@ -26,20 +26,31 @@ namespace LinqJobPortal
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            Employer emp = new Employer();
-            emp.EmployerName = textBoxName.Text;
-            emp.CompanyName = textBoxCompany.Text;
-            emp.Email = textBoxEmail.Text;
-            emp.City = textBoxCity.Text;
 
-            dBJobPortalEntities.Employers.Add(emp);
-            dBJobPortalEntities.SaveChanges();
+            if (string.IsNullOrEmpty(textBoxName.Text) || 
+                string.IsNullOrEmpty(textBoxCompany.Text) || 
+                string.IsNullOrEmpty(textBoxEmail.Text) || 
+                string.IsNullOrEmpty(textBoxCity.Text))
+            {
+                MessageBox.Show("Please Fill All Textbox");
+            }
+            else
+            {
+                Employer emp = new Employer();
+                emp.EmployerName = textBoxName.Text;
+                emp.CompanyName = textBoxCompany.Text;
+                emp.Email = textBoxEmail.Text;
+                emp.City = textBoxCity.Text;
 
-            showData();
+                dBJobPortalEntities.Employers.Add(emp);
+                dBJobPortalEntities.SaveChanges();
 
-            MessageBox.Show("Record Inserted Successfully");
+                showData();
 
-            clearData();
+                MessageBox.Show("Record Inserted Successfully");
+
+                clearData();
+            }
 
         }
 
@@ -68,6 +79,18 @@ namespace LinqJobPortal
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrEmpty(textBoxId.Text) ||
+                string.IsNullOrEmpty(textBoxName.Text) ||
+               string.IsNullOrEmpty(textBoxCompany.Text) ||
+               string.IsNullOrEmpty(textBoxEmail.Text) ||
+               string.IsNullOrEmpty(textBoxCity.Text))
+            {
+                MessageBox.Show("Please Fill All Textbox");
+            }
+            else
+            {
+
             int empId = Convert.ToInt32(textBoxId.Text);
 
             Employer emp = dBJobPortalEntities.Employers.Find(empId);
@@ -83,28 +106,45 @@ namespace LinqJobPortal
             MessageBox.Show("Record Updated Successfully");
 
             clearData();
+
+            }
+
         }
 
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-            int empId = Convert.ToInt32(textBoxId.Text);
+        private void deleteBtn_Click(object sender, EventArgs e){
 
-            Employer emp = dBJobPortalEntities.Employers.Find(empId);
+            if (string.IsNullOrEmpty(textBoxId.Text))
+            {
+                MessageBox.Show("Something Wan't Wrong");
+            }
+            else
+            {
 
-            dBJobPortalEntities.Employers.Remove(emp);
-            dBJobPortalEntities.SaveChanges();
+                int empId = Convert.ToInt32(textBoxId.Text);
 
-            showData();
+                Employer emp = dBJobPortalEntities.Employers.Find(empId);
 
-            MessageBox.Show("Record Deleted Successfully");
+                dBJobPortalEntities.Employers.Remove(emp);
+                dBJobPortalEntities.SaveChanges();
 
-            clearData();
+                showData();
+
+                MessageBox.Show("Record Deleted Successfully");
+
+                clearData();
+            }
 
         }
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
 
+            if (string.IsNullOrEmpty(textBoxSearch.Text))
+            {
+                MessageBox.Show("Search TextBox Can't Be Null");
+            }
+            else
+            {
             string name = textBoxSearch.Text;
             dataGridView1.DataSource = (from emp in dBJobPortalEntities.Employers
                                         select new
@@ -117,6 +157,9 @@ namespace LinqJobPortal
                                         }).Where(emp => emp.EmployerName.Contains(name)
                                         || emp.CompanyName.Contains(name))
                                         .ToList();
+
+
+            }
 
         }
 
