@@ -1,0 +1,14 @@
+from s in _contex.Student
+join c in _context.Course
+on s.CourseId equals c.CourseId
+where Name != null ? s.Name.Contains(Name) :true &&
+MinAge != null ? s.Age > MinAge : true &&
+MaxAge != null ? s.Age < MaxAge : true
+select New StudentCourse{
+studentId = s.studentId,
+StudentNamee = s.Name,
+Age = s.age,
+Gender = s.gender,
+CoursId = s.courseId,
+CourseName = c.courseName
+}
